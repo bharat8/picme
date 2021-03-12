@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "685234310353",
+    "project_id": "picme-5ce47",
+    "storage_bucket": "picme-5ce47.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:685234310353:android:8c8ea977e1270eba5849f0",
+        "android_client_info": {
+          "package_name": "com.example.picme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "685234310353-m57cgndnbs3evkuj66mi7q8udc8llboe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.picme",
+            "certificate_hash": "83a48331d614f0e2349d0c5a3f679bd6b3c50b55"
+          }
+        },
+        {
+          "client_id": "685234310353-6tbh0m0tn24cc5qoi95bm3m4pqteorrv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAF9RYEzfG1mzlwgEWuADWfmOEQIrpGoh0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "685234310353-6tbh0m0tn24cc5qoi95bm3m4pqteorrv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
