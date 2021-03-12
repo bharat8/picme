@@ -23,16 +23,13 @@ class PhotoViewer extends StatelessWidget {
               margin: EdgeInsets.only(
                   top: MediaQuery.of(context).size.height * 0.2 / 2),
               child: InteractiveViewer(
-                child: Hero(
-                  tag: "imageCached",
-                  child: CachedNetworkImage(
-                    imageUrl: imagePath,
-                    placeholder: (context, url) => SpinKitThreeBounce(
-                      color: Colors.blue[300],
-                      size: 15,
-                    ),
-                    errorWidget: (context, url, error) => new Icon(Icons.error),
+                child: CachedNetworkImage(
+                  imageUrl: imagePath,
+                  placeholder: (context, url) => SpinKitThreeBounce(
+                    color: Colors.blue[300],
+                    size: 15,
                   ),
+                  errorWidget: (context, url, error) => new Icon(Icons.error),
                 ),
               ),
             ),

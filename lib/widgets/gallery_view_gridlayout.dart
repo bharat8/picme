@@ -40,25 +40,22 @@ class GalleryViewGridLayout extends StatelessWidget {
                     child: Container(
                       width: 100,
                       height: 100 / 0.4,
-                      child: Hero(
-                        tag: "imageCached",
-                        child: CachedNetworkImage(
-                          imageUrl: snapshot.docs[index]["ImageUrl"],
-                          imageBuilder: (context, imageProvider) => Container(
-                            decoration: BoxDecoration(
-                              image: DecorationImage(
-                                image: imageProvider,
-                                fit: BoxFit.cover,
-                              ),
+                      child: CachedNetworkImage(
+                        imageUrl: snapshot.docs[index]["ImageUrl"],
+                        imageBuilder: (context, imageProvider) => Container(
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              image: imageProvider,
+                              fit: BoxFit.cover,
                             ),
                           ),
-                          placeholder: (context, url) => SpinKitThreeBounce(
-                            color: Colors.blue[300],
-                            size: 15,
-                          ),
-                          errorWidget: (context, url, error) =>
-                              new Icon(Icons.error),
                         ),
+                        placeholder: (context, url) => SpinKitThreeBounce(
+                          color: Colors.blue[300],
+                          size: 15,
+                        ),
+                        errorWidget: (context, url, error) =>
+                            new Icon(Icons.error),
                       ),
                     ),
                   ),
